@@ -1,0 +1,18 @@
+{
+    "bindings": [
+        {
+            "authLevel": "function",
+            "type": "httpTrigger",
+            "direction": "in",
+            "name": "req",
+            "methods": ["get"]
+        },
+        {
+            "type": "signalRConnectionInfo",
+            "name": "connectionInfo",
+            "hubName": "crud-test",
+            "connectionStringSetting": "SIGNALR_CONNECTION_STRING",
+            "direction": "in"
+        }
+    ]
+  }

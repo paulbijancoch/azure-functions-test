@@ -9,6 +9,13 @@
       "databaseName": "dbtodos",
       "collectionName": "items",
       "createLeaseCollectionIfNotExists": "true"
+    },
+    {
+      "type": "signalR",
+      "name": "signalRMessages",
+      "hubName": "crud-test",
+      "connectionStringSetting": "SIGNALR_CONNECTION_STRING",
+      "direction": "out"
     }
   ]
 }
