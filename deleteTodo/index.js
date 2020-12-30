@@ -23,3 +23,4 @@ module.exports = async function (context, req) {
             body: {'result': 'error', error}
         };
     }
+}
