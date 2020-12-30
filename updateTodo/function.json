@@ -1,0 +1,40 @@
+{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get",
+        "post"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "cosmosDB",
+      "name": "inputDocument",
+      "databaseName": "dbtodos",
+      "collectionName": "items",
+      "connectionStringSetting": "COSMOS_CONNECTION_STRING",
+      "partitionKey": "/all",
+      "direction": "in",
+      "sqlQuery": "select * from c where c.id = {id}"
+    },
+    {
+      "type": "cosmosDB",
+      "name": "outputDocument",
+      "databaseName": "dbtodos",
+      "collectionName": "items",
+      "createIfNotExists": false,
+      "connectionStringSetting": "COSMOS_CONNECTION_STRING",
+      "partitionKey": "/all",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}
