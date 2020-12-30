@@ -1,4 +1,4 @@
-module.exports = function (context, _req, connectionInfo) {
-    context.res = { body: connectionInfo }
-    context.done()
-  }
+module.exports = function (context, req, connectionInfo) {
+    context.res = { body: connectionInfo };
+    context.done();
+};

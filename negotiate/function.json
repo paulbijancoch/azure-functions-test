@@ -8,6 +8,11 @@
             "methods": ["get"]
         },
         {
+            "type": "http",
+            "direction": "out",
+            "name": "res"
+        },
+        {
             "type": "signalRConnectionInfo",
             "name": "connectionInfo",
             "hubName": "crud-test",
