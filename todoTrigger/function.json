@@ -13,7 +13,7 @@
     {
       "type": "signalR",
       "name": "signalRMessages",
-      "hubName": "crud-test",
+      "hubName": "todos",
       "connectionStringSetting": "SIGNALR_CONNECTION_STRING",
       "direction": "out"
     }

@@ -15,7 +15,7 @@
         {
             "type": "signalRConnectionInfo",
             "name": "connectionInfo",
-            "hubName": "crud-test",
+            "hubName": "todos",
             "connectionStringSetting": "SIGNALR_CONNECTION_STRING",
             "direction": "in"
         }
